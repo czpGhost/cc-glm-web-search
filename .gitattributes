@@ -1,0 +1,4 @@
+# These files are read by the Claude Code engine and by Node on any platform;
+# keep their line endings as written.
+* text=auto eol=lf
+*.png binary

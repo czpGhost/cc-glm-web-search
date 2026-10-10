@@ -1,0 +1,6 @@
+{
+  "name": "cc-glm-web-search",
+  "owner": { "name": "czpGhost" },
+  "description": "Z.AI (GLM) web search, reader and vision for Claude Code, on your existing Z.AI plan quota.",
+  "plugins": [{ "name": "cc-glm-web-search", "source": "./" }]
+}

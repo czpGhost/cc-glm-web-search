@@ -1,0 +1,32 @@
+{
+  "name": "cc-glm-web-search",
+  "version": "0.1.0",
+  "description": "Z.AI (GLM) web search and web reader for Claude Code, authenticated by a Z.AI email (OAuth) login instead of an API key.",
+  "author": { "name": "czpGhost" },
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "origin": {
+      "type": "string",
+      "title": "ZCode gateway origin",
+      "description": "The gateway origin to reach",
+      "default": "https://zcode.z.ai"
+    },
+    "model": {
+      "type": "string",
+      "title": "Model for search/reader requests",
+      "description": "Empty: the fallback model runs them"
+    },
+    "jwtEnv": {
+      "type": "string",
+      "title": "JWT environment variable",
+      "description": "Env var holding the Z.AI JWT directly",
+      "default": "ZAI_JWT"
+    },
+    "vision": {
+      "type": "boolean",
+      "title": "Register the glm_vision tool",
+      "description": "The tool is registered; the ZCode plan gateway refuses image input",
+      "default": true
+    }
+  }
+}
